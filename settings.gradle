@@ -1,0 +1,3 @@
+rootProject.name = 'CleanDishes'
+include ':Java Plugins:001 Simple Hello World'
+include ':Kotlin Plugins:001 Simple Hello World'

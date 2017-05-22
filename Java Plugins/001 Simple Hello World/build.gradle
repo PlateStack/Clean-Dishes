@@ -1,0 +1,14 @@
+group 'com.example.platestack'
+version '0.1.0-SNAPSHOT'
+
+apply plugin: 'java'
+
+repositories {
+    jcenter()
+    maven { url 'http://dl.bintray.com/kotlin/kotlinx' }
+    maven { url 'https://jitpack.io' }
+}
+
+dependencies {
+    compile 'com.github.PlateStack:PlateAPI:-SNAPSHOT'
+}
