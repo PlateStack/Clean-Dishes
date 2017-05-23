@@ -24,7 +24,7 @@ target/
 hs_err_pid*
 
 # Allow gradle wrapper
-!gradle/wrapper/gradle-wrapper.jar
+!gradle-wrapper.jar
 
 # IntelliJ
 *.ipr

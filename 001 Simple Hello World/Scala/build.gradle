@@ -1,0 +1,29 @@
+subprojects {
+    buildDir = buildDir.parentFile.toPath().resolve("target").resolve("gradle").toFile()
+
+    apply plugin: 'scala'
+
+    ext.scala_version = '2.12.2'
+
+    repositories {
+        jcenter()
+        maven { url 'http://dl.bintray.com/kotlin/kotlinx' }
+        maven { url 'https://jitpack.io' }
+    }
+
+    configurations {
+        scalaCompiler
+    }
+
+    dependencies {
+        scalaCompiler "org.scala-lang:scala-compiler:$scala_version"
+        scalaCompiler "org.scala-lang:scala-library:$scala_version"
+        scalaCompiler "org.scala-lang:scala-reflect:$scala_version"
+
+        compile 'com.github.PlateStack:PlateAPI:-SNAPSHOT'
+    }
+
+    tasks.withType(ScalaCompile) {
+        scalaClasspath = configurations.scalaCompiler
+    }
+}

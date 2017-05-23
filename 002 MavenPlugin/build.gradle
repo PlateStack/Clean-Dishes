@@ -1,0 +1,28 @@
+buildscript {
+    ext.kotlin_version = '1.1.2-4'
+
+    repositories {
+        jcenter()
+    }
+
+    dependencies {
+        //noinspection DifferentKotlinGradleVersion
+        classpath "org.jetbrains.kotlin:kotlin-gradle-plugin:$kotlin_version"
+    }
+}
+
+subprojects {
+    buildDir = buildDir.parentFile.toPath().resolve("target").resolve("gradle").toFile()
+
+    apply plugin: projectDir.name.toLowerCase()
+
+    repositories {
+        jcenter()
+        maven { url 'http://dl.bintray.com/kotlin/kotlinx' }
+        maven { url 'https://jitpack.io' }
+    }
+
+    dependencies {
+        compile 'com.github.PlateStack:PlateAPI:-SNAPSHOT'
+    }
+}
