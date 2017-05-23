@@ -6,8 +6,8 @@ Here you have a collection of examples showing how to configure your plugin proj
 
 Contents
 --------
-1. [Simple Hello World](001) - [Java](001 J) - [Kotlin](001 K) - [Scala SBT](001 S SBT)
-2. [Maven Plugin](002) - [Kotlin](002 K)
+1. [Simple Hello World][001] - [Java][001 J] - [Kotlin][001 K] - [Scala SBT][001 S SBT]
+2. [Maven Plugin][002] - [Kotlin][002 K]
  
 [002]: 002%20MavenPlugin
 [002 K]: 002%20MavenPlugin/Kotlin
