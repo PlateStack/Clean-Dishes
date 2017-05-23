@@ -7,7 +7,7 @@ and this project adheres to [Semantic Versioning](http://semver.org/).
 ## [Unreleased]
 ### Added
 - Maven plugin example: [Java](002%20MavenPlugin/Java) - [Scala](002%20MavenPlugin/Scala)
-- Simple Hello World example: [Scala Gradle](001%20Simple%20Hello%20World/Scala/Gradle)
+- Simple Hello World example: [Scala Gradle](001%20Simple%20Hello%20World/Scala/Gradle) - [Groovy](001%20Simple%20Hello%20World/Groovy)
 - A table of contents to the [README](README.md) file
 - Simple Hello World example: [Scala SBT](001%20Simple%20Hello%20World/Scala/SBT)
 - Maven plugin example: [Kotlin](002%20MavenPlugin/Kotlin)
