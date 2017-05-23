@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+
+    <!-- Change to YOUR group -->
+    <groupId>com.example.platestack</groupId>
+
+    <!-- Change to YOUR plugin id -->
+    <artifactId>java-maven-plugin</artifactId>
+
+    <!-- Change to your plugin name -->
+    <name>Java Maven Plugin</name>
+
+    <!--
+             The default version 1.0-SNAPSHOT is NOT Okay!
+             The version must have tree numbers
+             Check http://semver.org/spec/v2.0.0.html for more details and follow that rules.
+                            -->
+    <version>0.1.0-SNAPSHOT</version>
+
+    <properties>
+        <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+        <junit.version>4.12</junit.version>
+
+        <!-- Java 8+ is required! -->
+        <maven.compiler.source>1.8</maven.compiler.source>
+        <maven.compiler.target>1.8</maven.compiler.target>
+    </properties>
+
+    <repositories>
+
+        <!-- Necessary to interact with immutable collections -->
+        <repository>
+            <snapshots>
+                <enabled>false</enabled>
+            </snapshots>
+            <id>kotlinx</id>
+            <name>bintray</name>
+            <url>http://dl.bintray.com/kotlin/kotlinx</url>
+        </repository>
+
+        <!-- Who needs a maven repository when we have jitpack and a github repository? :) -->
+        <repository>
+            <id>jitpack.io</id>
+            <url>https://jitpack.io</url>
+        </repository>
+
+    </repositories>
+
+    <dependencies>
+
+        <!-- All necessary dependencies will be grabbed automatically -->
+        <dependency>
+            <groupId>com.github.PlateStack</groupId>
+            <artifactId>PlateAPI</artifactId>
+            <version>-SNAPSHOT</version>
+        </dependency>
+
+    </dependencies>
+
+</project>

@@ -7,26 +7,26 @@
     <groupId>com.example.platestack</groupId>
 
     <!-- Change to YOUR plugin id -->
-    <artifactId>MavenPlugin</artifactId>
+    <artifactId>kotlin-maven-plugin</artifactId>
+
+    <!-- Change to your plugin name -->
+    <name>Kotlin Maven Plugin</name>
 
     <!--
          The default version 1.0-SNAPSHOT is NOT Okay!
          The version must have tree numbers
          Check http://semver.org/spec/v2.0.0.html for more details and follow that rules.
                         -->
-    <version>1.0-SNAPSHOT</version>
-    <packaging>jar</packaging>
+    <version>0.1.0-SNAPSHOT</version>
 
-    <!-- Change to your plugin name -->
-    <name>Plate Maven Plugin</name>
+    <packaging>jar</packaging>
 
     <properties>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+        <junit.version>4.12</junit.version>
 
         <!-- Make sure to match the same Kotlin version as the API -->
         <kotlin.version>1.1.2-4</kotlin.version>
-
-        <junit.version>4.12</junit.version>
     </properties>
 
     <repositories>
