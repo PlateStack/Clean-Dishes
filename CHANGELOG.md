@@ -6,6 +6,7 @@ and this project adheres to [Semantic Versioning](http://semver.org/).
 
 ## [Unreleased]
 ### Added
+- Simple Hello World example: [Scala Gradle](001%20Simple%20Hello%20World/Scala/Gradle)
 - A table of contents to the [README](README.md) file
 - Simple Hello World example: [Scala SBT](001%20Simple%20Hello%20World/Scala/SBT)
 - Maven plugin example: [Kotlin](002%20MavenPlugin/Kotlin)

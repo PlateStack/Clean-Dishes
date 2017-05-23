@@ -3,6 +3,7 @@ rootProject.name = 'CleanDishes'
 includeRenamed '001 Simple Hello World:Java'
 includeRenamed '001 Simple Hello World:Kotlin'
 includeRenamed '001 Simple Hello World:Scala:SBT'
+includeRenamed '001 Simple Hello World:Scala:Gradle'
 includeRenamed '002 MavenPlugin:Kotlin'
 
 def includeRenamed(String path) {

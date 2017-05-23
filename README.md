@@ -6,7 +6,7 @@ Here you have a collection of examples showing how to configure your plugin proj
 
 Contents
 --------
-1. [Simple Hello World][001] - [Java][001 J] - [Kotlin][001 K] - [Scala SBT][001 S SBT]
+1. [Simple Hello World][001] - [Java][001 J] - [Kotlin][001 K] - [Scala SBT][001 S SBT] - [Scala Gradle][001 S G]
 2. [Maven Plugin][002] - [Kotlin][002 K]
  
 [002]: 002%20MavenPlugin
@@ -16,3 +16,4 @@ Contents
 [001 J]: 001%20Simple%20Hello%20World/Java
 [001 K]: 001%20Simple%20Hello%20World/Kotlin
 [001 S SBT]: 001%20Simple%20Hello%20World/Scala/SBT
+[001 S G]: 001%20Simple%20Hello%20World/Scala/Gradle
