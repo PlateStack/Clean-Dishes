@@ -15,4 +15,4 @@ Contents
 [001]: 001%20Simple%20Hello%20World
 [001 J]: 001%20Simple%20Hello%20World/Java
 [001 K]: 001%20Simple%20Hello%20World/Kotlin
-[001 S SBT]: 001%20Simple%20Hello%20World/Scala
+[001 S SBT]: 001%20Simple%20Hello%20World/Scala/SBT
