@@ -15,6 +15,23 @@ subprojects {
     buildDir = buildDir.parentFile.toPath().resolve("target").resolve("gradle").toFile()
 
     apply plugin: projectDir.name.toLowerCase()
+    if(projectDir.name == 'Scala') {
+        ext.scala_version = '2.12.2'
+
+        configurations {
+            scalaCompiler
+        }
+
+        dependencies {
+            scalaCompiler "org.scala-lang:scala-compiler:$scala_version"
+            scalaCompiler "org.scala-lang:scala-library:$scala_version"
+            scalaCompiler "org.scala-lang:scala-reflect:$scala_version"
+        }
+
+        tasks.withType(ScalaCompile) {
+            scalaClasspath = configurations.scalaCompiler
+        }
+    }
 
     repositories {
         jcenter()
