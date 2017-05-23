@@ -6,7 +6,7 @@ Here you have a collection of examples showing how to configure your plugin proj
 
 Contents
 --------
-1. [Simple Hello World][001] - [![][j] Java][001 J] - [![][k] Kotlin][001 K] - [![][g] Groovy][001 G] [![][s] Scala SBT][001 S SBT] - [![][s] Scala Gradle][001 S G]
+1. [Simple Hello World][001] - [![][j] Java][001 J] - [![][k] Kotlin][001 K] - [![][g] Groovy][001 G] - [![][s] Scala SBT][001 S SBT] - [![][s] Scala Gradle][001 S G]
 2. [Maven Plugin][002] - [![][j] Java][002 J] - [![][k] Kotlin][002 K] - [![][s] Scala][002 S]
  
 [002]: 002%20MavenPlugin
