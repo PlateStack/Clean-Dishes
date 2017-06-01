@@ -10,6 +10,6 @@ class SimpleHelloWorld extends PlatePlugin
 {
     SimpleHelloWorld()
     {
-        logger.info("Hello World from ${annotation.name()} version $version");
+        logger.info("Hello World from ${metadata.name} version $version")
     }
 }

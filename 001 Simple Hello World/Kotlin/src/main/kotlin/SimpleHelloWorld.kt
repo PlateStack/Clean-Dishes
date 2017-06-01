@@ -27,6 +27,6 @@ object SimpleHelloWorld: PlatePlugin() {
      * to show a hello world right now.
      */
     init {
-        logger.info("Hello World from ${annotation.name} version $version")
+        logger.info { "Hello World from ${metadata.name} version $version" }
     }
 }

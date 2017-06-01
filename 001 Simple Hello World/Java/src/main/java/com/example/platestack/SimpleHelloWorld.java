@@ -22,6 +22,6 @@ public class SimpleHelloWorld extends PlatePlugin
      */
     public SimpleHelloWorld()
     {
-        getLogger().info("Hello World from "+getAnnotation().name()+" version "+getVersion());
+        getLogger().info("Hello World from "+getMetadata().getName()+" version "+getVersion());
     }
 }
