@@ -21,7 +21,7 @@ subprojects {
             scalaCompiler "org.scala-lang:scala-library:$scala_version"
             scalaCompiler "org.scala-lang:scala-reflect:$scala_version"
 
-            compile 'com.github.PlateStack:PlateAPI:a50fd1d41e'
+            compile 'com.github.PlateStack:PlateAPI:9efbb20ecb'
         }
 
         tasks.withType(ScalaCompile) {

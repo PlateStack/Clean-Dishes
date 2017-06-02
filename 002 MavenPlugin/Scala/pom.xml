@@ -46,7 +46,7 @@
         <dependency>
             <groupId>com.github.PlateStack</groupId>
             <artifactId>PlateAPI</artifactId>
-            <version>a50fd1d41e</version>
+            <version>9efbb20ecb</version>
         </dependency>
 
         <dependency>
