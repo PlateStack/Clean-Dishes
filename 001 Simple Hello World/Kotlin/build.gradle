@@ -29,7 +29,7 @@ repositories {
 }
 
 dependencies {
-    compile 'com.github.PlateStack:PlateAPI:-SNAPSHOT' // All necessary dependencies will be grabbed automatically
+    compile 'com.github.PlateStack:PlateAPI:a50fd1d41e' // All necessary dependencies will be grabbed automatically
 
     // You don't need to add a compile dependency to the kotlin-std lib, it is already required by the PlateAPI
     // and it will be bundled by the PlateStack implementation, so you don't need to do that either.

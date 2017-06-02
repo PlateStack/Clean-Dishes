@@ -22,11 +22,8 @@ import org.platestack.api.plugin.annotation.Version
 @Plate("kotlin_obj_plugin", "Simple Kotlin Plugin", Version(0,1,0,"SNAPSHOT"))
 object SimpleHelloWorld: PlatePlugin() {
 
-    /**
-     * IMPORTANT: Your plugin is not enabled yet at the construction stage but it's the only way
-     * to show a hello world right now.
-     */
-    init {
+    override fun onEnable() {
         logger.info { "Hello World from ${metadata.name} version $version" }
     }
+
 }

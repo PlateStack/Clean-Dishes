@@ -8,7 +8,7 @@ resolvers += Resolver.jcenterRepo
 resolvers += "kotlinx" at "http://dl.bintray.com/kotlin/kotlinx"
 resolvers += "jitpack" at "https://jitpack.io"
 
-libraryDependencies += "com.github.PlateStack" % "PlateAPI" % "-SNAPSHOT" % "provided"
+libraryDependencies += "com.github.PlateStack" % "PlateAPI" % "a50fd1d41e" % "provided"
 
 updateOptions := updateOptions.value.withLatestSnapshots(false)
 

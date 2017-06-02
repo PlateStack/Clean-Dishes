@@ -16,12 +16,9 @@ import org.platestack.api.plugin.annotation.Version;
 @Plate(id = "simple_java_plugin", name = "Simple Java Plugin", version = @Version("0.1.0-SNAPSHOT"))
 public class SimpleHelloWorld extends PlatePlugin
 {
-    /**
-     * IMPORTANT: Your plugin is not enabled yet at the construction stage but it's the only way
-     * to show a hello world right now.
-     */
-    public SimpleHelloWorld()
+    @Override
+    protected void onEnable()
     {
-        getLogger().info("Hello World from "+getMetadata().getName()+" version "+getVersion());
+        getLogger().info("Hello World from %s version %s", getMetadata().getName(), getVersion());
     }
 }

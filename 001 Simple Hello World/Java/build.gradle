@@ -11,5 +11,5 @@ repositories {
 }
 
 dependencies {
-    compile 'com.github.PlateStack:PlateAPI:-SNAPSHOT' // All necessary dependencies will be grabbed automatically
+    compile 'com.github.PlateStack:PlateAPI:a50fd1d41e' // All necessary dependencies will be grabbed automatically
 }

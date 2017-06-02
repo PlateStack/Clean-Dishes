@@ -19,7 +19,7 @@ dependencies {
     scalaCompiler "org.scala-lang:scala-library:$scala_version"
     scalaCompiler "org.scala-lang:scala-reflect:$scala_version"
 
-    compile 'com.github.PlateStack:PlateAPI:-SNAPSHOT'
+    compile 'com.github.PlateStack:PlateAPI:a50fd1d41e'
 }
 
 tasks.withType(ScalaCompile) {

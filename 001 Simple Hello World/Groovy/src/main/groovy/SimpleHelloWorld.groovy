@@ -8,8 +8,9 @@ import org.platestack.api.plugin.annotation.Version
 @Singleton(strict = false)
 class SimpleHelloWorld extends PlatePlugin
 {
-    SimpleHelloWorld()
+    @Override
+    protected void onEnable()
     {
-        logger.info("Hello World from ${metadata.name} version $version")
+        logger.info { "Hello World from ${metadata.name} version $version" }
     }
 }
