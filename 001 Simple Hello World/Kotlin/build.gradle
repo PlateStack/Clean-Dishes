@@ -24,12 +24,11 @@ apply plugin: 'kotlin'
 
 repositories {
     jcenter() // Most dependencies are there
-    maven { url 'http://dl.bintray.com/kotlin/kotlinx' } // Necessary to interact with immutable collections
     maven { url 'https://jitpack.io' } // Who needs a maven repository when we have jitpack and a github repository? :)
 }
 
 dependencies {
-    compile 'com.github.PlateStack:PlateAPI:9efbb20ecb' // All necessary dependencies will be grabbed automatically
+    compile 'com.github.PlateStack:PlateAPI:243015725f' // All necessary dependencies will be grabbed automatically
 
     // You don't need to add a compile dependency to the kotlin-std lib, it is already required by the PlateAPI
     // and it will be bundled by the PlateStack implementation, so you don't need to do that either.

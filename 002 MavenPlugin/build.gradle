@@ -35,11 +35,10 @@ subprojects {
 
     repositories {
         jcenter()
-        maven { url 'http://dl.bintray.com/kotlin/kotlinx' }
         maven { url 'https://jitpack.io' }
     }
 
     dependencies {
-        compile 'com.github.PlateStack:PlateAPI:9efbb20ecb'
+        compile 'com.github.PlateStack:PlateAPI:243015725f'
     }
 }

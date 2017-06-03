@@ -6,7 +6,6 @@ ext.scala_version = '2.12.2'
 
 repositories {
     jcenter()
-    maven { url 'http://dl.bintray.com/kotlin/kotlinx' }
     maven { url 'https://jitpack.io' }
 }
 
@@ -19,7 +18,7 @@ dependencies {
     scalaCompiler "org.scala-lang:scala-library:$scala_version"
     scalaCompiler "org.scala-lang:scala-reflect:$scala_version"
 
-    compile 'com.github.PlateStack:PlateAPI:9efbb20ecb'
+    compile 'com.github.PlateStack:PlateAPI:243015725f'
 }
 
 tasks.withType(ScalaCompile) {

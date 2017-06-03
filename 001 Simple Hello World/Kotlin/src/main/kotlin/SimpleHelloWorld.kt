@@ -19,7 +19,7 @@ import org.platestack.api.plugin.annotation.Version
  * 3. click on "Show Parameter Hints Settings"
  * 4. remove the parenthesis from Version to blacklist the entire annotation.
  */
-@Plate("kotlin_obj_plugin", "Simple Kotlin Plugin", Version(0,1,0,"SNAPSHOT"))
+@Plate("kotlin_obj_plugin", "Simple Kotlin Plugin", Version(0,1,0,"SNAPSHOT"), kotlin = "1.1.2-4")
 object SimpleHelloWorld: PlatePlugin() {
 
     override fun onEnable() {

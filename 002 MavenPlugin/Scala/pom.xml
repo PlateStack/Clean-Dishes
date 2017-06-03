@@ -16,16 +16,6 @@
             <url>http://scala-tools.org/repo-releases</url>
         </repository>
 
-        <!-- Necessary to interact with immutable collections -->
-        <repository>
-            <snapshots>
-                <enabled>false</enabled>
-            </snapshots>
-            <id>kotlinx</id>
-            <name>bintray</name>
-            <url>http://dl.bintray.com/kotlin/kotlinx</url>
-        </repository>
-
         <!-- Who needs a maven repository when we have jitpack and a github repository? :) -->
         <repository>
             <id>jitpack.io</id>
@@ -46,7 +36,7 @@
         <dependency>
             <groupId>com.github.PlateStack</groupId>
             <artifactId>PlateAPI</artifactId>
-            <version>9efbb20ecb</version>
+            <version>243015725f</version>
         </dependency>
 
         <dependency>
