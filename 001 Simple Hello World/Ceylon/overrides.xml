@@ -1,5 +1,0 @@
-<overrides>
-    <artifact groupId='io.github.microutils' artifactId='kotlin-logging' version='1.4.4'>
-        <add groupId='org.slf4j' artifactId='slf4j-api' version='1.7.21' shared='true' />
-    </artifact>
-</overrides>
