@@ -6,9 +6,6 @@ import org.platestack.api.plugin.annotation {
     ver=version,
     library
 }
-import org.slf4j {
-    Logger
-}
 
 plate {
     id = "simple_ceylon_plugin";
@@ -18,10 +15,8 @@ plate {
 }
 class SimpleHelloWorld() extends PlatePlugin() {
 
-    Logger getLogger() => logger;
-
     shared actual void onEnable() {
-        getLogger().info("Hello World from ``metadata.name`` version ``version``");
+        logger.info("Hello World from ``metadata.name`` version ``version``");
     }
 
 }

@@ -7,9 +7,9 @@ source=source
 [defaults]
 offline=false
 flatclasspath=false
-autoexportmavendependencies=false
-fullyexportmavendependencies=false
-overrides=overrides.xml
+autoexportmavendependencies=true
+fullyexportmavendependencies=true
+overrides=
 
 
 [repositories]
