@@ -19,6 +19,6 @@ public class SimpleHelloWorld extends PlatePlugin
     @Override
     protected void onEnable()
     {
-        getLogger().info("Hello World from %s version %s", getMetadata().getName(), getVersion());
+        getLogger().info("Hello World from {} version {}", getMetadata().getName(), getVersion());
     }
 }
