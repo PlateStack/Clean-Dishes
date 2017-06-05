@@ -1,0 +1,4 @@
+gradlew           linguist-vendored=true
+gradlew.bat       linguist-vendored=true
+ceylonb           linguist-vendored=true
+ceylonb.bat       linguist-vendored=true
