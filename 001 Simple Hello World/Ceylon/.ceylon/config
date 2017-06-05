@@ -9,7 +9,6 @@ offline=false
 flatclasspath=false
 autoexportmavendependencies=true
 fullyexportmavendependencies=true
-overrides=
 
 
 [repositories]

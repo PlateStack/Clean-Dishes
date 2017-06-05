@@ -3,15 +3,13 @@ import org.platestack.api.plugin {
 }
 import org.platestack.api.plugin.annotation {
     plate,
-    ver=version,
-    library
+    ver=version
 }
 
-plate {
+shared plate {
     id = "simple_ceylon_plugin";
     name = "Simple Ceylon Plugin";
     version = ver("0.1.0-SNAPSHOT");
-    requires = {library("org.ceylon-lang", "ceylon.language", "1.3.2")};
 }
 class SimpleHelloWorld() extends PlatePlugin() {
 
