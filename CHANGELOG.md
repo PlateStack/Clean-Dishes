@@ -6,6 +6,7 @@ and this project adheres to [Semantic Versioning](http://semver.org/).
 
 ## [Unreleased]
 ### Added
+- NMS Access using SRG example: [Java](003%20NMS%20Access%20using%20SRG/Java) 
 - Simple Hello World example: [Ceylon](001%20Simple%20Hello%20World/Ceylon)
 - Maven plugin example: [Java](002%20MavenPlugin/Java) - [Scala](002%20MavenPlugin/Scala)
 - Simple Hello World example: [Scala Gradle](001%20Simple%20Hello%20World/Scala/Gradle) - [Groovy](001%20Simple%20Hello%20World/Groovy)

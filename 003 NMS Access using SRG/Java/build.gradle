@@ -1,0 +1,58 @@
+/**
+ * To use SRG in this example we will use VanillaGradle, it is a ForgeGradle plugin which provides
+ * the same MCP classes and methods as uses in forge mod development, but using a pure vanilla Minecraft JAR.
+ */
+buildscript {
+    repositories {
+        maven {
+            url "https://plugins.gradle.org/m2/"
+        }
+        maven {
+            url = "http://files.minecraftforge.net/maven"
+        }
+    }
+    dependencies {
+        classpath "gradle.plugin.net.minecrell:vanillagradle:2.2-5"
+        classpath 'net.minecraftforge.gradle:ForgeGradle:2.2-SNAPSHOT'
+    }
+}
+
+// Make sure to apply the server plugin, no client class is available.
+// Client can still be used when targeting sponge servers running as a client mod, but the improper usage
+// of client classes may cause your plugin to be incompatible with craftbukkit and sponge running as dedicated server
+apply plugin: 'net.minecrell.vanillagradle.server'
+
+// As you are using NMS, you need to target a single Minecraft version
+// your code will still work on other versions as long as the SRG name of the classes, methods and fields
+// used are the same.
+// PlayerStack for CraftBukkit will remap all SRG classes, methods and fields to the corresponding runtime name.
+//
+// So, net.minecraft.entity.EntityList
+// would be remapped to
+// net.minecraft.server.v_1_11_R1.EntityTypes on CraftBukkit for Minecraft 1.11.2
+// and to
+// net.minecraft.server.1_8_R3.EntityTypes on CraftBukkit for Minecraft 1.8.8
+minecraft {
+    // The target version
+    version = '1.11.2'
+
+    // The MCP mappings that you wish to use, can be any mapping compatible with the targeted version
+    // Sable mappings: http://export.mcpbot.bspk.rs/stable/
+    // Snapshot mappings: http://export.mcpbot.bspk.rs/snapshot/
+    mappings = 'snapshot_20170608'
+}
+
+group 'com.example.platestack' // Change to YOUR group
+version '0.1.0-SNAPSHOT' // The default version '1.0-SNAPSHOT' is NOT Okay! The version must have tree numbers
+                         // Check http://semver.org/spec/v2.0.0.html for more details and follow that rules.
+
+// We don't call apply plugin: 'java' because the vanillagradle plugin already does it for us!
+
+repositories {
+    jcenter()  // Most dependencies are there
+    maven { url 'https://jitpack.io' } // Who needs a maven repository when we have jitpack and a github repository? :)
+}
+
+dependencies {
+    compile 'com.github.PlateStack:PlateAPI:243015725f' // All necessary dependencies will be grabbed automatically
+}
