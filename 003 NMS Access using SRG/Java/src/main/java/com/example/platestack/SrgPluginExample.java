@@ -2,15 +2,14 @@ package com.example.platestack;
 
 import net.minecraft.entity.EntityList;
 import net.minecraft.entity.monster.EntityCreeper;
-import net.minecraft.server.dedicated.DedicatedServer;
+import net.minecraft.server.MinecraftServer;
 import net.minecraft.util.ResourceLocation;
 import net.minecraft.util.math.BlockPos;
 import net.minecraft.world.WorldServer;
+import org.platestack.api.minecraft.Minecraft;
 import org.platestack.api.plugin.PlatePlugin;
 import org.platestack.api.plugin.annotation.Plate;
 import org.platestack.api.plugin.annotation.Version;
-
-import java.lang.reflect.Field;
 
 /**
  * This example plugin creates a custom creeper which is afraid of players.
@@ -26,18 +25,8 @@ public class SrgPluginExample extends PlatePlugin
     @Override
     protected void onEnable()
     {
-        // Hack into DedicatedServer
-        DedicatedServer server;
-        try
-        {
-            Field target = Thread.class.getDeclaredField("target");
-            target.setAccessible(true);
-
-            server = (DedicatedServer) target.get(Thread.currentThread());
-        } catch(ReflectiveOperationException e)
-        {
-            throw new RuntimeException(e);
-        }
+        // Gets the MinecraftServer instance using the PlateStack API.
+        MinecraftServer server = (MinecraftServer) Minecraft.getServer().getInstance();
 
         // Unfortunately we need to register all our custom entity classes, otherwise it will be invisible to the players.
         // This will use the same registration data as a normal creeper.
