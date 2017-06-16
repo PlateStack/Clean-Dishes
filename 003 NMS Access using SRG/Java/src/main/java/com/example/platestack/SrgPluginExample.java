@@ -45,8 +45,8 @@ public class SrgPluginExample extends PlatePlugin
         creeper.setPosition(worldSpawn.getX(), worldSpawn.getY(), worldSpawn.getZ());
 
         // Add it to the world
-        getLogger().info("Spawning creeper at: "+worldSpawn);
+        getLogger().info(()-> "Spawning creeper at: "+worldSpawn);
         overWorld.spawnEntity(creeper);
-        getLogger().info("Creeper: "+creeper);
+        getLogger().info(()-> "Creeper: "+creeper);
     }
 }

@@ -9,6 +9,7 @@ includeRenamed '002 MavenPlugin:Java'
 includeRenamed '002 MavenPlugin:Kotlin'
 includeRenamed '002 MavenPlugin:Scala'
 includeRenamed '003 NMS Access using SRG:Java'
+includeRenamed '003 NMS Access using SRG:Kotlin'
 
 def includeRenamed(String path) {
     include(path)
