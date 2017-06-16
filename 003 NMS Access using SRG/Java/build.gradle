@@ -54,5 +54,5 @@ repositories {
 }
 
 dependencies {
-    compile 'com.github.PlateStack:PlateAPI:243015725f' // All necessary dependencies will be grabbed automatically
+    compile 'com.github.PlateStack:PlateAPI:4c46af57a8' // All necessary dependencies will be grabbed automatically
 }

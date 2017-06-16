@@ -39,6 +39,6 @@ subprojects {
     }
 
     dependencies {
-        compile 'com.github.PlateStack:PlateAPI:243015725f'
+        compile 'com.github.PlateStack:PlateAPI:4c46af57a8'
     }
 }

@@ -18,7 +18,7 @@ dependencies {
     scalaCompiler "org.scala-lang:scala-library:$scala_version"
     scalaCompiler "org.scala-lang:scala-reflect:$scala_version"
 
-    compile 'com.github.PlateStack:PlateAPI:243015725f'
+    compile 'com.github.PlateStack:PlateAPI:4c46af57a8'
 }
 
 tasks.withType(ScalaCompile) {

@@ -7,7 +7,7 @@ scalaVersion := "2.12.2"
 resolvers += Resolver.jcenterRepo
 resolvers += "jitpack" at "https://jitpack.io"
 
-libraryDependencies += "com.github.PlateStack" % "PlateAPI" % "243015725f" % "provided"
+libraryDependencies += "com.github.PlateStack" % "PlateAPI" % "4c46af57a8" % "provided"
 
 updateOptions := updateOptions.value.withLatestSnapshots(false)
 
